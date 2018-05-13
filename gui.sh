@@ -1,8 +1,7 @@
-xhost +
-sudo docker run --rm -ti --net=host --ipc=host \
-   -e DISPLAY=$DISPLAY \
-   -v /tmp/.X11-unix:/tmp/.X11-unix \
+docker run --rm -it --net=host \
+   -e DISPLAY \
    -v $PWD:/app \
+   -w /app \
    jjanzic/docker-python3-opencv \
    bash
 
