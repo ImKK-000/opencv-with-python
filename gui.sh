@@ -5,3 +5,5 @@ sudo docker run --rm -ti --net=host --ipc=host \
    -v $PWD:/app \
    jjanzic/docker-python3-opencv \
    bash
+
+# pip install matplotlib

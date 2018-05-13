@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 img = cv2.imread('lenna.png')
 
-blur = cv2.GaussianBlur(img,(5,5),0)
+blur = cv2.GaussianBlur(img,(51,51),0)
 
 plt.subplot(121),plt.imshow(img),plt.title('Original')
 plt.xticks([]), plt.yticks([])
